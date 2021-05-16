@@ -1,0 +1,32 @@
+{
+    "mode": "sr",
+    "use_cl": true,
+    "gpu_ids": [0],
+
+    "scale": 4,
+    "degradation": "BI",
+    "is_train": false,
+    "use_chop": false,
+    "rgb_range": 255,
+    "self_ensemble": false,
+
+    "datasets": {
+        "test_set1": {
+            "mode": "LRHR",
+            "dataroot_HR": "/home/yu/Documents/RCAN-master/RCAN_TestCode/HR/imagenet/x4",
+            "dataroot_LR": "/home/yu/Documents/RCAN-master/RCAN_TestCode/LR/LRBI/imagenet/x4",
+            "data_type": "img"
+        }
+    },
+
+    "networks": {
+        "which_model": "EFGN",
+        "in_channels": 3,
+        "num_features": 64,
+        "scale": 4
+    },
+
+    "solver": {
+        "pretrained_path": "best_ckp_x4.pth"
+    }
+}
