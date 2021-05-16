@@ -32,7 +32,7 @@
     },
 
     "networks": {
-        "which_model": "efgn_cal",
+        "which_model": "efgn",
         "num_features": 64,
         "in_channels": 3,
         "scale": 4
