@@ -1,3 +1,3 @@
 # EFGN
-Pytorch code for Efficient Feature Generating Network.
+Pytorch code for Efficient Feature Generating Network. 
 Coming soon....
